@@ -1,0 +1,150 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* --------------------------- */
+/* Header & Navigation */
+/* --------------------------- */
+header {
+  background: #004e89;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------- */
+/* Hauptbereich / Sections */
+/* --------------------------- */
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-section {
+  margin-bottom: 3rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row; /* Text links, Bild rechts */
+  gap: 2rem;
+  align-items: flex-start; /* Bild oben am Text */
+}
+
+.about-container .portrait {
+  width: 150px;
+  height: auto;          /* Höhe proportional */
+  object-fit: cover;
+}
+
+/* --------------------------- */
+/* Skills-Design */
+/* --------------------------- */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skill {
+  background-color: #e3f2fd;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  color: #1565c0;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  background-color: #bbdefb;
+  transform: scale(1.05);
+}
+
+/* --------------------------- */
+/* Buttons */
+/* --------------------------- */
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  background: #004e89;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #006bb3;
+}
+
+/* --------------------------- */
+/* Footer */
+/* --------------------------- */
+footer {
+  background: #004e89;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* --------------------------- */
+/* Responsivität für Mobile */
+/* --------------------------- */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container .portrait {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+}
