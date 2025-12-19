@@ -200,6 +200,10 @@ footer {
     justify-content: center;
   }
 
+  #dogContainer {
+        min-height: 200px;
+    }
+
   #dogContainer img {
     height: auto;
     max-width: 260px;
