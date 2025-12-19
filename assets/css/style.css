@@ -33,9 +33,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* --------------------------- */
-/* Hauptbereich / Sections */
-/* --------------------------- */
+
 main {
   padding: 2rem;
   max-width: 900px;
@@ -48,14 +46,14 @@ main {
 
 .about-container {
   display: flex;
-  flex-direction: row; /* Text links, Bild rechts */
+  flex-direction: row;
   gap: 2rem;
-  align-items: flex-start; /* Bild oben am Text */
+  align-items: flex-start;
 }
 
 .about-container .portrait {
   width: 150px;
-  height: auto;          /* Höhe proportional */
+  height: auto;   
   object-fit: cover;
 }
 
@@ -63,7 +61,7 @@ main {
   list-style: none;
   padding: 0;
   margin: 0;
-  border-left: 3px solid #004e89; /* Linie links bleibt */
+  border-left: 3px solid #004e89; 
   padding-left: 1.2rem;
 }
 
@@ -78,9 +76,7 @@ main {
   font-size: 1.05rem;
 }
 
-/* --------------------------- */
-/* Skills-Design */
-/* --------------------------- */
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -102,9 +98,7 @@ main {
   transform: scale(1.05);
 }
 
-/* --------------------------- */
-/* Buttons */
-/* --------------------------- */
+
 .buttons {
   display: flex;
   gap: 1rem;
@@ -125,9 +119,7 @@ main {
   background: #006bb3;
 }
 
-/* --------------------------- */
-/* Random Dog Section */
-/* --------------------------- */
+
 #randomdog {
   text-align: center;
   margin-bottom: 3rem;
@@ -162,15 +154,13 @@ main {
 }
 
 #dogContainer img {
-  height: 350px;      /* fixed height */
-  width: auto;        /* maintain aspect ratio */
+  height: 350px;
+  width: auto;
   border-radius: 8px;
   border: 2px solid #90caf9;
 }
 
-/* --------------------------- */
-/* Footer */
-/* --------------------------- */
+
 footer {
   background: #004e89;
   color: white;
@@ -179,9 +169,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* --------------------------- */
-/* Responsivität für Mobile */
-/* --------------------------- */
+
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
@@ -208,10 +196,9 @@ footer {
     justify-content: center;
   }
 
-  /* Random Dog Section Mobile */
   #dogContainer img {
+    height: auto;
     max-width: 260px;
-    height: auto; /* scales proportionally */
   }
 
   #dogButton {
