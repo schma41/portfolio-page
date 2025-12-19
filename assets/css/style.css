@@ -160,6 +160,14 @@ main {
   border: 2px solid #90caf9;
 }
 
+#map {
+  height: 350px;
+  width: 100%;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  border: 2px solid #90caf9;
+}
+
 
 footer {
   background: #004e89;
@@ -204,5 +212,9 @@ footer {
   #dogButton {
     width: 80%;
     max-width: 300px;
+  }
+
+  #map {
+    height: 250px;
   }
 }
